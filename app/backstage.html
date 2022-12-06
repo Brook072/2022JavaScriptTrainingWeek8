@@ -1,0 +1,20 @@
+---
+title: 後台
+layout: ./app/layout.ejs
+engine: ejs
+current: backstage
+---
+
+<div class="pt-15">
+    <div class="container">
+        <div id="orderListWrapper">
+            <h2 class="text-2xl text-center mb-27">全品項營收比重</h2>
+            <div id="allItemSellRatio"></div>
+            <div class="flex flex-col items-end">
+                <a href="" class="py-2.5 px-5 mb-3 w-44 text-center text-xl border border-black rounded hover:bg-black hover:text-white" onclick=deleteOrder() >清除全部訂單</a>
+                <table class="table-auto w-full" id="orderList"></table>
+            </div>
+        </div>
+        <h2 class="hidden text-4xl text-center" id="noOrderText">目前沒有任何訂單！</h2>
+    </div>
+</div>
